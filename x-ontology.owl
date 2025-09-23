@@ -10,16 +10,11 @@
     
     <owl:Ontology rdf:about="http://example.org/twitter">
         <owl:versionIRI rdf:resource="http://example.org/twitter/1.0"/>
-        <dc:creator>Twitter Ontology Builder</dc:creator>
-        <dc:description>A clean Twitter ontology with simple hierarchy</dc:description>
-        <dc:title>Twitter Social Media Ontology (Clean Version)</dc:title>
+        <dc:creator>Argya, Devin, Andrian</dc:creator>
+        <dc:description>A Twitter ontology </dc:description>
+        <dc:title>Twitter Social Media Ontology </dc:title>
     </owl:Ontology>
     
-    <!-- 
-    =================================================================
-    CLEAN CLASS HIERARCHY - No anonymous classes
-    =================================================================
-    -->
     
     <!-- Top-level abstract classes -->
     <owl:Class rdf:about="#TwitterEntity">
