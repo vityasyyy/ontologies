@@ -26,6 +26,7 @@
     
     <!-- USER CLASSES -->
     <owl:Class rdf:about="#User">
+      <rdfs:subClassOf rdf:resource="#TwitterEntity"/>
       <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:Class> 
 
@@ -56,6 +57,8 @@
     </owl:Class>
     
     <owl:Class rdf:about="#Tweet">
+        <rdfs:label>Tweet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Content"/>
         <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Post"/>
     </owl:Class>
     
