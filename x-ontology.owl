@@ -10,6 +10,8 @@
     
     <owl:Ontology rdf:about="https://vityasyyy.github.io/ontologies/x-ontology.owl">
         <owl:versionIRI rdf:resource="https://vityasyyy.github.io/ontologies/x-ontology.owl/1.0"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <owl:imports rdf:resource="http://rdfs.org/sioc/ns#"/>
         <dc:creator>Argya, Devin, Andrian</dc:creator>
         <dc:description>A Twitter ontology </dc:description>
         <dc:title>Twitter Social Media Ontology </dc:title>
@@ -23,12 +25,10 @@
     </owl:Class>
     
     <!-- USER CLASSES -->
-    <owl:Class rdf:about="#User">
-        <rdfs:label>User</rdfs:label>
-        <rdfs:comment>A Twitter user account</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="#TwitterEntity"/>
-    </owl:Class>
-    
+    <owl:Class rdf:about=":User">
+      <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class> 
+
     <owl:Class rdf:about="#VerifiedUser">
         <rdfs:label>Verified User</rdfs:label>
         <rdfs:comment>A verified Twitter user account</rdfs:comment>
@@ -55,10 +55,8 @@
         <rdfs:subClassOf rdf:resource="#TwitterEntity"/>
     </owl:Class>
     
-    <owl:Class rdf:about="#Tweet">
-        <rdfs:label>Tweet</rdfs:label>
-        <rdfs:comment>A Twitter post/tweet</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="#Content"/>
+    <owl:Class rdf:about=":Tweet">
+        <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Post"/>
     </owl:Class>
     
     <owl:Class rdf:about="#OriginalTweet">
@@ -152,11 +150,12 @@
     -->
     
     <owl:ObjectProperty rdf:about="#follows">
-        <rdfs:label>follows</rdfs:label>
-        <rdfs:comment>A user follows another user</rdfs:comment>
-        <rdfs:domain rdf:resource="#User"/>
-        <rdfs:range rdf:resource="#User"/>
-        <owl:inverseOf rdf:resource="#followedBy"/>
+      <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+      <rdfs:label>follows</rdfs:label>
+      <rdfs:comment>A user follows another user (specialization of foaf:knows)</rdfs:comment>
+      <rdfs:domain rdf:resource="#User"/>
+      <rdfs:range rdf:resource="#User"/>
+      <owl:inverseOf rdf:resource="#followedBy"/>
     </owl:ObjectProperty>
     
     <owl:ObjectProperty rdf:about="#followedBy">
