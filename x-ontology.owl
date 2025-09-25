@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://example.org/twitter#"
-     xml:base="http://example.org/twitter"
+<rdf:RDF xmlns="https://vityasyyy.github.io/ontologies/x-ontology.owl#"
+     xml:base="https://vityasyyy.github.io/ontologies/x-ontology.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,8 +8,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     
-    <owl:Ontology rdf:about="http://example.org/twitter">
-        <owl:versionIRI rdf:resource="http://example.org/twitter/1.0"/>
+    <owl:Ontology rdf:about="https://vityasyyy.github.io/ontologies/x-ontology.owl">
+        <owl:versionIRI rdf:resource="https://vityasyyy.github.io/ontologies/x-ontology.owl/1.0"/>
         <dc:creator>Argya, Devin, Andrian</dc:creator>
         <dc:description>A Twitter ontology </dc:description>
         <dc:title>Twitter Social Media Ontology </dc:title>
