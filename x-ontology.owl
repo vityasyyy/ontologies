@@ -10,8 +10,6 @@
     
     <owl:Ontology rdf:about="https://vityasyyy.github.io/ontologies/x-ontology.owl">
         <owl:versionIRI rdf:resource="https://vityasyyy.github.io/ontologies/x-ontology.owl/1.0"/>
-        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
-        <owl:imports rdf:resource="http://rdfs.org/sioc/ns#"/>
         <dc:creator>Argya, Devin, Andrian</dc:creator>
         <dc:description>A Twitter ontology </dc:description>
         <dc:title>Twitter Social Media Ontology </dc:title>
